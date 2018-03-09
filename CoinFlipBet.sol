@@ -22,7 +22,7 @@ contract CoinFlipBet {
         bool hasWithdrawnOnce;
         bool winner;
     }
-    mapping (address => Player) players;
+    mapping (address => Player) public players;
 
     event Won ();
     event Lost ();
